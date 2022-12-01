@@ -10,19 +10,30 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@reactiff/app-data-client": "link:..",
     "@testing-library/jest-dom": "link:../node_modules/@testing-library/jest-dom",
     "@testing-library/react": "link:../node_modules/@testing-library/react",
     "@testing-library/user-event": "link:../node_modules/@testing-library/user-event",
     "@types/jest": "link:../node_modules/@types/jest",
     "@types/node": "link:../node_modules/@types/node",
     "@types/react": "link:../node_modules/@types/react",
+    "@types/lodash": "link:../node_modules/@types/lodash",
+    "@types/react-csv": "^1.1.2",
     "@types/react-dom": "link:../node_modules/@types/react-dom",
+    "lodash": "link:../node_modules/lodash",
     "react": "link:../node_modules/react",
+    "react-csv": "^2.0.3",
     "react-dom": "link:../node_modules/react-dom",
+    "react-dropzone-uploader": "^2.11.0",
+    "react-images-viewer": "^1.6.7",
+    "react-json-inspector": "^7.1.1",
     "react-markdown": "^6.0.2",
     "react-scripts": "link:../node_modules/react-scripts",
     "typescript": "link:../node_modules/typescript",
-    "@reactiff/app-data-client": "link:.."
+    "uuid": "link:../node_modules/uuid"
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"

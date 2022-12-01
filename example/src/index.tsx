@@ -5,5 +5,6 @@ import App from './App'
 import './css/index.css'
 import './css/orthogonal.css'
 import './css/flex.css'
+import './css/beveled.css'
 
 ReactDOM.render(<App />, document.getElementById('root'))

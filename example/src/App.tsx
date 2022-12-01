@@ -1,57 +1,39 @@
-import React, { useEffect, useMemo, useState } from 'react'
-import ReactMarkdown from 'react-markdown'
-import Component from '@reactiff/app-data-client'
+import React from 'react';
 
-const component = new Component();
+// import NPMHeaderDetails from './NPMHeaderDetails';
+// import NPMFooter from './NPMFooter';
 
-const md = `
-[![NPM](https://img.shields.io/npm/v/@reactiff/app-data-client.svg)](https://www.npmjs.com/package/@reactiff/app-data-client) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-`;
+// import Dropzone from './components/DropZone';
+// import Uploader from './components/Uploader';
+
+import EntityImage from './components/EntityImage';
+
+import api from './api_dev';
+import appConfig  from './appConfig';
+
+debugger
+api.init(appConfig);
 
 const App = () => {
 
-  const [state, setState] = useState<any>();
-
-  useEffect(() => {
-    const run = () => {
-      const newState = { value: 0 };
-      setState(newState);
-      setTimeout(run, 1000);
-    }
-    run();
-  }, [setState]);
-
-  const styles = useMemo(() => ({
-    box: { 
-      border: '4px solid #ffffff',
-      padding: 30,
-    },
-    value: { 
-      fontSize: '3rem',
-      margin: '0 0 15px 0',
-    },
-  }), []);
+  // const styles = useMemo(() => ({
+  //   // add styles 
+  // }), []);
 
   return (
     <div> 
       <div className="flex column align-center" >
-        <h1>
-          @reactiff/app-data-client
-        </h1>
-        <p>
-          Virtual API client for your app anywhere!
-        </p>
-        <ReactMarkdown>
-          {md}
-        </ReactMarkdown>
-        <div className="flex column align-center" style={styles.box}>
-          <h1 style={styles.value}>
-            {state.value.toFixed(2)}
-          </h1>
+        <h1>@reactiff/app-data-client example</h1>
+
+        <div className="flex column align-center">
+
+
+          <EntityImage image="main" context={{}} width={600} height={400}/>
+              
+            
         </div>
-        <p>
-          <a href="https://www.npmjs.com/package/@reactiff/app-data-client">npm</a> | <a href="https://github.com/reactiff/package-name">git</a> | MIT © <a href="https://github.com/reactiff">Rick Ellis</a>
-        </p>
+        
+
       </div>
     </div>
   )
